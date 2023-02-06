@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title></title>
+
+      <script>
+      function rep()
+      {
+	       cl1= setInterval(fun1,1000)
+           var c=0;
+
+           function fun1()
+           {
+               c++;
+               if(c==1)
+               document.getElementById('img1').src="C:/Users/91756/Pictures/bilb3.jpg"
+               if(c==2)
+               { 
+                    document.getElementById('img2').src="C:/Users/91756/Pictures/bilb3.jpg"
+               }
+               if(c==3)
+               {
+                    document.getElementById('img3').src="C:/Users/91756/Pictures/bilb3.jpg"
+                }
+               if(c==4)
+               {
+                    document.getElementById('img4').src="C:/Users/91756/Pictures/bilb3.jpg"
+               }
+               if(c==5)
+                off();
+           }
+      }
+          function off()
+          {
+              document.getElementById('img1').src="C:/Users/91756/Pictures/bilb2.jpg"
+              document.getElementById('img2').src="C:/Users/91756/Pictures/bilb2.jpg"
+              document.getElementById('img3').src="C:/Users/91756/Pictures/bilb2.jpg"
+              document.getElementById('img4').src="C:/Users/91756/Pictures/bilb2.jpg"
+          }
+          function clr()
+          {
+            clearInterval(cl1);
+            document.getElementById('img1').src="C:/Users/91756/Pictures/bilb2.jpg"
+            document.getElementById('img2').src="C:/Users/91756/Pictures/bilb2.jpg"
+            document.getElementById('img3').src="C:/Users/91756/Pictures/bilb2.jpg"
+            document.getElementById('img4').src="C:/Users/91756/Pictures/bilb2.jpg"
+          }
+ </script>
+</head>
+<body>
+ <img id="img1" src="C:\Users\91756\Pictures/bilb2.jpg" style="width:100px">
+ <img id="img2" src="C:\Users\91756\Pictures/bilb2.jpg" style="width:100px">
+ <img id="img3" src="C:\Users\91756\Pictures/bilb2.jpg" style="width:100px">
+ <img id="img4" src="C:\Users\91756\Pictures/bilb2.jpg" style="width:100px">
+<button onclick="rep()"> ON</button>
+<button onclick="clr()"> OFF</button>
